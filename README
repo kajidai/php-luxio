@@ -1,0 +1,19 @@
+PHP extension for Lux IO
+--------------------
+
+Lux IO website is here:
+http://luxio.sourceforge.net/
+
+SYNOPSIS:
+ <?php
+ $luxiobtree = new LuxIOBtree();
+ $luxiobtree->open('test', LUX_DB_CREAT);
+
+ $ret = $luxiobtree->put('key', 'value');
+ // $ret = true;
+
+ $ret = $luxiobtree->get('key');
+ // $ret = 'value';
+
+ $ret = $luxiobtree->del('key');
+ // $ret = true;
